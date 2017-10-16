@@ -1,0 +1,87 @@
+.contact_us{
+    width: 100%;
+    height: auto;
+    
+    & .container--1{
+        width: 970px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+        & .acva{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            & form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-top: 80px;
+                & h3{
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 500;
+                    font-size: 25px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    
+                }
+                & input{
+                    padding: 3px 10px 3px 10px;
+                    margin: 10px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 500;
+                    font-size: 15px;
+                    border-radius: 10px;
+                    outline: 0;
+                    border: 1px solid black;
+                    &:focus{
+                    
+                        border: 1px solid #fb6470;
+                        transition: 0.25s;
+                    }
+                    &.btn{
+                        padding: 10px 20px 10px 20px;
+                        background-color: #fb6470;
+                        text-decoration: none;
+                        color: #fff;
+                        border-radius: 10px;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 500;
+                        font-size: 15px;
+                        border: 1px solid #fb6470;
+                        &:hover, &:focus{
+                        
+                            background: #fb6470;
+                            box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
+                            color: white;
+                            transform: translateY(-7px);
+                            transition: 0.4s;
+                            outline: 0;
+                        }
+                    
+                    }
+                
+                }
+                & textarea{
+                    padding: 10px 15px 10px 10px;
+                    margin: 15px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 500;
+                    font-size: 15px;
+                    border-radius: 10px;
+                    overflow: auto;
+	                resize: none;
+                    outline: 0;
+                    border: 1px solid black;
+                    &:focus{
+                    
+                        border: 1px solid #fb6470;
+                        transition: 0.25s;
+                    }
+                }
+            }
+        }
+    }
+   
+}

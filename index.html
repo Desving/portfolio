@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Портфолио стажера</title>
+    <link rel="stylesheet" href="css/main.css">
+   
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Мои достижения</a></li>
+                <li><a href="#">Мои работы</a></li>
+                <li><a href="#">Связаться со мной</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Денис Шергин</h1>
+        <div class="subtitle">
+            <h3>Front-end разработка </h3>
+            <h3>Back-end разработка </h3>
+        </div>
+        <a href="#" class = "btn">найми меня!</a> 
+    </header>
+    
+    <div class="about_us">
+        <div class="container">
+            <div class="container-left">
+                <h2 class = "min_title"><span>Обо</span> мне</h2>
+                <p>Lorem ipsum dolor sit amet, ectetuer nonummy nibh euismod tincidunt ut laoreet  magna  laoreet  aliquam erat volutpat.</p>
+                <ul>
+                    <li><b>Имя:</b> Денис Шергин</li>
+                    <li><b>Возраст:</b> 22 года</li>
+                    <li><b>Email:</b> </li>
+                </ul>
+            </div>
+            <div class="container-right">
+                <img src="img/layer-33.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="serteficats">
+        <div class="container">
+            <h2 class = "min_title" id = "title"><span>Мои</span> достижения</h2>
+            <div id="main" role="main">
+              <section class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_cheesecake_brownie.jpg" /></a>
+  	    		            </li>
+  	    		            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_lemon.jpg" /></a>
+  	    		            </li>
+  	    		            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_donut.jpg" /></a>
+  	    		            </li>
+  	    		            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_caramel.jpg" /></a>
+  	    		            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div class="exemple">
+       <div class="container">
+            <h2 class = "min_title" id = "title"><span>Мои</span> работы</h2>
+            <div id="main" role="main">
+              <section class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_cheesecake_brownie.jpg" /></a>
+  	    		            </li>
+  	    		            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_lemon.jpg" /></a>
+  	    		            </li>
+  	    		            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_donut.jpg" /></a>
+  	    		            </li>
+  	    		            <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_caramel.jpg" /></a>
+  	    		            </li>
+                           <li>
+  	    	                    <a href="#"><img src="img/kitchen_adventurer_caramel.jpg" /></a>
+  	    		            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div> 
+    </div>
+    <div class="contact_us">
+        <div class="container--1">
+           <h2 class = "min_title"><span>Связь</span> со мной</h2>
+            <div class="acva">
+                <form action="#">
+                   <h3>Напишите мне о своем предложении</h3>
+                   <input type="text" placeholder="  Ваше имя" required>
+                   <input type="e-mail" placeholder="  Ваш Email" required>
+                   <textarea name="Опишите свое предложение" id="Text" cols="30" rows="10" placeholder=" Опишите ваше предложение"></textarea>
+                   <input class = "btn" type="submit">
+               
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="clear" style="clear: both">
+        
+    </div>
+    <footer>
+        <div class="container--2">
+            <a href=""><img class= "icons8-ВКонтакте" src="img/mezhdunarodny.ico" alt=""><img class= "icons8-ВКонтакте-1" src="img/mezhdunarodny-bw.ico" alt=""></a>
+        </div>
+        <p>
+            
+        </p>
+    </footer>
+    
+    
+    
+    
+    
+    
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    
+    <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+</body>
+</html>
