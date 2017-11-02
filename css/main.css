@@ -73,6 +73,7 @@ header h1 {
 header .subtitle {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 header .subtitle h3 {
   margin-top: 10px;
@@ -82,11 +83,14 @@ header .subtitle h3 {
   font-size: 18px;
   color: white;
   border-left: 1px solid white;
+  text-align: center;
 }
 @media (min-width: 320px) and (max-width: 765px)  {
   header .subtitle h3 {
     padding: 10px 0 0 30px;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-right: 20px;
   }
 }
 header .subtitle h3:first-child {
