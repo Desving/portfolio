@@ -310,14 +310,6 @@ html[xmlns] .flexslider .slides {
     height: auto;
   }
 }
-@media (min-width: 350px) and (max-width: 765px) {
-  .flexslider {
-    width: 310px;
-    display: block;
-    align-content: center;
-    height: auto;
-  }
-}
 .flexslider .slides {
   zoom: 1;
 }
@@ -517,7 +509,11 @@ html[xmlns] .flexslider .slides {
 }
 .contact_us {
   width: 100%;
-  height: auto;
+}
+@media (min-width: 320px) and (max-width: 765px)  {
+  .contact_us {
+    width: 320px;
+  }
 }
 .contact_us .container--1 {
   width: 970px;
