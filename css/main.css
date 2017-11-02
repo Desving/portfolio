@@ -4,7 +4,7 @@ header {
   flex-direction: column;
   min-height: 587px;
   width: 100%;
-  background-image: url(../../img/backgraund.jpg);
+  background-image: url(../img/backgraund.jpg);
   background-size: cover;
 }
 header ul {
