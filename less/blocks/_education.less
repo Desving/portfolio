@@ -36,6 +36,7 @@
 .flexslider {
   margin: 0;
   padding: 0;
+ 
 }
 .flexslider .slides > li {
   display: none;
@@ -65,6 +66,16 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * DEFAULT THEME
  * ====================================================================================================================*/
+.main{
+    
+  @mobile: ~"(min-width: 320px) and (max-width: 765px) ";
+  @mobile-area: 320px;
+  @media @mobile {
+        
+        width: @mobile-area;
+    } 
+}
+
 .flexslider {
   width: 800px;
   height: 500px;
@@ -80,6 +91,27 @@ html[xmlns] .flexslider .slides {
   -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  @tablet: ~"(min-width: 768px)";
+  @tablet-area: 700px;
+  @desktop: ~"(min-width: 1024px)";
+  @desktop-area: 800px;
+  @mobile: ~"(min-width: 320px) and (max-width: 765px) ";
+  @mobile-area: 310px;
+  @media @tablet {
+      
+        width: @tablet-area;
+        margin: 30px 25px 50px 25px;
+      
+    }
+    @media @desktop {
+        width: @desktop-area;
+        margin: 30px 100px 50px 100px;
+    }
+    @media @mobile {
+        width: @mobile-area;
+        margin: 30px auto 50px auto;
+        height: auto;
+    }
 }
 .flexslider .slides {
   zoom: 1;
@@ -138,10 +170,18 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav .flex-prev {
   left: -50px;
+  @mobile: ~"(min-width: 320px)";    
+  @media @mobile {
+        display: none;
+    }
 }
 .flex-direction-nav .flex-next {
   right: -50px;
   text-align: right;
+  @mobile: ~"(min-width: 320px)";    
+  @media @mobile {
+        display: none;
+    }
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;

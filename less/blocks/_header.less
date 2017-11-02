@@ -5,6 +5,25 @@ header{
     width: 100%;
     background-color: #353541;
     
+    @tablet: ~"(min-width: 768px)";
+    @tablet-area: 100%;
+    @desktop: ~"(min-width: 1024px)";
+    @desktop-area: 100%;
+    @mobile: ~"(min-width: 320px) and (max-width: 765px) ";
+    @mobile-area: 100%;
+    
+     @media @tablet {
+        width: @tablet-area;
+    }
+    @media @desktop {
+        width: @desktop-area;
+    }
+    @media @mobile {
+        width: @mobile-area;
+    }
+  
+
+    
     
     & ul{
         display: flex;
@@ -13,6 +32,9 @@ header{
         text-decoration: none;
         list-style: none;
         justify-content: center;
+        @media @mobile {
+            display: none;
+        }
         
         & li{
             padding: 10px;
@@ -50,6 +72,11 @@ header{
         margin-top: 180px;
         padding: 10px;
         min-width: 350px;
+        @media @mobile {
+            padding: 20px 0;
+            min-width: 300px;
+            font-size: 40px;
+        }
     }
     
     .subtitle{
@@ -66,6 +93,11 @@ header{
             color: white;
             
             border-left: 1px solid white;
+            
+            @media @mobile {
+                padding: 10px 0 0 30px;
+                font-size: 18px;
+            }
             
             &:first-child{
                 border-left: 0px solid white;
