@@ -270,8 +270,9 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 @media (min-width: 320px) and (max-width: 765px)  {
-  .main {
+  #main {
     width: 320px;
+    margin: 0 auto;
   }
 }
 .flexslider {
@@ -306,6 +307,14 @@ html[xmlns] .flexslider .slides {
   .flexslider {
     width: 310px;
     margin: 30px auto 50px auto;
+    height: auto;
+  }
+}
+@media (min-width: 350px) and (max-width: 765px) {
+  .flexslider {
+    width: 310px;
+    display: block;
+    align-content: center;
     height: auto;
   }
 }

@@ -66,13 +66,14 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * DEFAULT THEME
  * ====================================================================================================================*/
-.main{
+#main{
     
   @mobile: ~"(min-width: 320px) and (max-width: 765px) ";
   @mobile-area: 320px;
   @media @mobile {
         
         width: @mobile-area;
+        margin: 0 auto;
     } 
 }
 
@@ -96,6 +97,7 @@ html[xmlns] .flexslider .slides {
   @desktop: ~"(min-width: 1024px)";
   @desktop-area: 800px;
   @mobile: ~"(min-width: 320px) and (max-width: 765px) ";
+  @mobile-second: ~"(min-width: 350px) and (max-width: 765px)"; 
   @mobile-area: 310px;
   @media @tablet {
       
@@ -110,6 +112,12 @@ html[xmlns] .flexslider .slides {
     @media @mobile {
         width: @mobile-area;
         margin: 30px auto 50px auto;
+        height: auto;
+    }
+     @media @mobile-second {
+        width: @mobile-area;
+        display: block;
+        align-content: center;
         height: auto;
     }
 }
