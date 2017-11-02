@@ -1,30 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 587px;
   width: 100%;
-  background-color: #353541;
+  background-image: url(../../img/backgraund.jpg);
+  background-size: cover;
 }
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
   text-decoration: none;
   list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 header ul li {
   padding: 10px;
@@ -40,12 +30,8 @@ header ul li a {
   color: #fb6470;
 }
 header h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -60,12 +46,8 @@ header h1 {
   min-width: 350px;
 }
 header .subtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 header .subtitle h3 {
   margin-top: 10px;
@@ -80,8 +62,6 @@ header .subtitle h3:first-child {
   border-left: 0px solid white;
 }
 header .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
   padding: 19px 40px 17px 40px;
@@ -96,12 +76,9 @@ header .btn {
 header .btn:hover,
 header .btn:focus {
   background: #fb6470;
-  -webkit-box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
-          box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
+  box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
   color: white;
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-  -webkit-transition: 0.4s;
+  transform: translateY(-7px);
   transition: 0.4s;
   outline: 0;
 }
@@ -111,20 +88,12 @@ header .btn:focus {
   background-color: #f9f9f9;
 }
 .container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 970px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 .container-left {
   width: 40%;
@@ -237,8 +206,11 @@ html[xmlns] .flexslider .slides {
   border: 4px solid #fff;
   position: relative;
   zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -252,6 +224,9 @@ html[xmlns] .flexslider .slides {
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 .loading .flex-viewport {
@@ -278,6 +253,9 @@ html[xmlns] .flexslider .slides {
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav a:before {
@@ -364,8 +342,11 @@ html[xmlns] .flexslider .slides {
   cursor: pointer;
   text-indent: -9999px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
 }
 .flex-control-paging li a:hover {
@@ -395,6 +376,9 @@ html[xmlns] .flexslider .slides {
   cursor: pointer;
   -moz-user-select: none;
   -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 .flex-control-thumbs img:hover {
@@ -424,37 +408,19 @@ html[xmlns] .flexslider .slides {
 .contact_us .container--1 {
   width: 970px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .contact_us .container--1 .acva {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
 }
 .contact_us .container--1 .acva form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin-top: 80px;
 }
 .contact_us .container--1 .acva form h3 {
@@ -476,7 +442,6 @@ html[xmlns] .flexslider .slides {
 }
 .contact_us .container--1 .acva form input:focus {
   border: 1px solid #fb6470;
-  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 .contact_us .container--1 .acva form input.btn {
@@ -493,12 +458,9 @@ html[xmlns] .flexslider .slides {
 .contact_us .container--1 .acva form input.btn:hover,
 .contact_us .container--1 .acva form input.btn:focus {
   background: #fb6470;
-  -webkit-box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
-          box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
+  box-shadow: 2px 10px 15px rgba(251, 100, 112, 0.4);
   color: white;
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-  -webkit-transition: 0.4s;
+  transform: translateY(-7px);
   transition: 0.4s;
   outline: 0;
 }
@@ -516,7 +478,6 @@ html[xmlns] .flexslider .slides {
 }
 .contact_us .container--1 .acva form textarea:focus {
   border: 1px solid #fb6470;
-  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 /*ВКонтакте icon by Icons8 */
@@ -525,21 +486,13 @@ footer {
   height: 65px;
   margin-top: 80px;
   border-top: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 footer .container--2 {
   width: 970px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -551,7 +504,6 @@ footer .container--2 .icons8-ВКонтакте-1 {
   position: absolute;
   width: 35px;
   height: 35px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   left: auto;
   top: auto;
