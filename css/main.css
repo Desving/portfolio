@@ -4,7 +4,9 @@ header {
   flex-direction: column;
   min-height: 587px;
   width: 100%;
-  background-color: #353541;
+  height: 100vh;
+  background-image: url(../../img/backgraund.jpg);
+  background-size: cover;
 }
 @media (min-width: 768px) {
   header {
@@ -28,6 +30,7 @@ header ul {
   text-decoration: none;
   list-style: none;
   justify-content: center;
+  margin-top: 35px;
 }
 @media (min-width: 320px) and (max-width: 765px)  {
   header ul {
