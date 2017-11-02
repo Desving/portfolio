@@ -509,6 +509,7 @@ html[xmlns] .flexslider .slides {
 }
 .contact_us {
   width: 100%;
+  height: auto;
 }
 @media (min-width: 320px) and (max-width: 765px)  {
   .contact_us {
