@@ -368,7 +368,7 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
-@media (min-width: 320px) {
+@media (max-width: 768px) {
   .flex-direction-nav .flex-prev {
     display: none;
   }
@@ -377,7 +377,7 @@ html[xmlns] .flexslider .slides {
   right: -50px;
   text-align: right;
 }
-@media (min-width: 320px) {
+@media (max-width: 768px) {
   .flex-direction-nav .flex-next {
     display: none;
   }
